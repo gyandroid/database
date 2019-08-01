@@ -138,6 +138,21 @@
       </New>
     </Arg>
   </Call>
+  <Call name="addBean">
+    <Arg>
+      <New class="org.eclipse.jetty.plus.jaas.JAASLoginService">
+        <Set name="Name">Test JAAS Realm</Set>
+        <Set name="LoginModuleName">ldap</Set>
+
+        <Set name="roleClassNames">
+          <Array type="java.lang.String">
+            <Item>org.eclipse.jetty.plus.jaas.JAASRole</Item>
+          </Array>
+        </Set>
+
+      </New>
+    </Arg>
+  </Call>
   <!-- HTTPS Configuration -->
   <!-- See https://www.eclipse.org/jetty/documentation/9.4.x/configuring-ssl.html for information on generating certificates, etc. -->
   <!-- Uncomment and configure to enable SSL support.

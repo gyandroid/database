@@ -2,7 +2,7 @@
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
   <display-name>Bigdata</display-name>
   <description>Bigdata</description>
-  <!-- Uncomment to enable authentication
+  <!-- Uncomment to enable authentication -->
   <security-constraint>
     <web-resource-collection>
       <url-pattern>/*</url-pattern>
@@ -11,14 +11,13 @@
       <role-name>blazegraph</role-name>
     </auth-constraint>
   </security-constraint>
-  <login-config>
+  <!--<login-config>
     <auth-method>BASIC</auth-method>
     <realm-name>Default Realm</realm-name>
-  </login-config>
+  </login-config>-->
   <security-role>
     <role-name>blazegraph</role-name>
   </security-role>
-  -->
   <context-param>
     <description>The property file (for a standalone database instance) or the
    jini configuration file (for a federation).  The file MUST end with either
